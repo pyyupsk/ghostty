@@ -1,0 +1,76 @@
+/* TUI-like tabs, Catppuccin Mocha */
+/* Debug: env GTK_DEBUG=interactive ghostty */
+
+/* Palette
+   base     #1e1e2e
+   mantle   #181825
+   crust    #11111b
+   surface0 #313244
+   surface1 #45475a
+   overlay0 #6c7086
+   subtext0 #a6adc8
+   text     #cdd6f4
+   blue     #89b4fa
+   lavender #b4befe
+*/
+
+headerbar,
+tabbar,
+tabbar tabbox {
+  background-color: #181825;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+}
+
+tabbar tabbox {
+  min-height: 26px;
+  border-bottom: 1px solid #313244;
+}
+
+tabbar tabbox tab {
+  background-color: transparent;
+  color: #6c7086;
+  font-family: "JetBrainsMono Nerd Font Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 14px;
+  margin: 0;
+  border: none;
+  border-right: 1px solid #313244;
+  border-radius: 0;
+  min-height: 22px;
+  transition:
+    color 100ms ease,
+    background-color 100ms ease;
+}
+
+tabbar tabbox tab:hover {
+  color: #a6adc8;
+  background-color: #1e1e2e;
+}
+
+tabbar tabbox tab:checked,
+tabbar tabbox tab:selected {
+  color: #89b4fa;
+  background-color: #1e1e2e;
+  box-shadow: inset 0 -2px 0 #89b4fa;
+}
+
+tabbar tabbox tab button.image-button,
+tabbar tabbox tab button {
+  min-width: 16px;
+  min-height: 16px;
+  padding: 0 4px;
+  margin: 0 0 0 6px;
+  background: transparent;
+  border: none;
+  color: #6c7086;
+  border-radius: 0;
+}
+
+tabbar tabbox tab button:hover {
+  color: #f38ba8;
+  background-color: transparent;
+}

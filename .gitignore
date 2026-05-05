@@ -1,0 +1,9 @@
+# Editor crud
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Local overrides
+config.local
+*.local

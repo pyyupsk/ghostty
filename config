@@ -1,0 +1,50 @@
+config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
+
+font-family = "JetBrainsMono Nerd Font Mono"
+font-size = 12
+bold-is-bright = true
+
+window-padding-x = 14
+window-padding-y = 14
+background-opacity = 0.85
+background-blur-radius = 20
+confirm-close-surface = false
+resize-overlay = never
+window-decoration = false
+gtk-tabs-location = top
+gtk-wide-tabs = false
+gtk-titlebar = false
+gtk-custom-css = tab-style.css
+
+cursor-style-blink = false
+mouse-hide-while-typing = true
+clipboard-read = allow
+clipboard-write = allow
+shell-integration-features = no-cursor,ssh-env
+
+keybind = shift+insert=paste_from_clipboard
+keybind = control+insert=copy_to_clipboard
+keybind = alt+v=new_split:right
+keybind = alt+h=new_split:down
+keybind = alt+w=close_surface
+keybind = ctrl+alt+h=goto_split:left
+keybind = ctrl+alt+l=goto_split:right
+keybind = ctrl+alt+k=goto_split:up
+keybind = ctrl+alt+j=goto_split:down
+
+keybind = alt+t=new_tab
+keybind = alt+comma=previous_tab
+keybind = alt+period=next_tab
+keybind = alt+one=goto_tab:1
+keybind = alt+two=goto_tab:2
+keybind = alt+three=goto_tab:3
+keybind = alt+four=goto_tab:4
+keybind = alt+five=goto_tab:5
+keybind = alt+six=goto_tab:6
+keybind = alt+seven=goto_tab:7
+keybind = alt+eight=goto_tab:8
+keybind = alt+nine=goto_tab:9
+
+# Hyprland slowness fix: https://github.com/ghostty-org/ghostty/discussions/3224
+async-backend = epoll
+linux-cgroup = always
